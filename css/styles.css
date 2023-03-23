@@ -457,9 +457,12 @@ margin-bottom: 72px;
 
 .service-item{
     width: calc((100% - 48px) / 3 );
-    border: 1px solid #E7E9FC;
+    
 }
 
+.text-block{
+    border: 1px solid #E7E9FC;
+}
 .servise-second-title{
     margin-top: 32px;
     margin-bottom: 8px;
