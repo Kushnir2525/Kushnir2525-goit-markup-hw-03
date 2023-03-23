@@ -420,9 +420,7 @@ margin-bottom: 72px;
     height: 48px;
    
 }
-.button-item{
-   
-}
+
 .menu-btn {
     font-family: inherit;
     font-weight: 500;
@@ -461,10 +459,14 @@ margin-bottom: 72px;
 }
 
 .text-block{
-    border: 1px solid #E7E9FC;
+border-left: 1px solid #E7E9FC;
+border-right: 1px solid #E7E9FC;
+border-bottom: 1px solid #E7E9FC;
+border-top: 0px;
+
 }
 .servise-second-title{
-    margin-top: 32px;
+    padding-top: 32px;
     margin-bottom: 8px;
     padding-left: 16px;
 }
