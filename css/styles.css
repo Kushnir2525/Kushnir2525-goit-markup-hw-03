@@ -74,7 +74,9 @@ font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
-color: var(--main-title-color)
+color: var(--main-title-color);  
+text-align: center; 
+margin-bottom: 72px; 
 }
 
 .second-title {
@@ -99,6 +101,10 @@ color:var(--main-text-color);
     margin: 0 auto;
 }
 
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 /* ============= /COMPONENTS============= */
 
 
@@ -230,7 +236,7 @@ text-align: center;
 letter-spacing: 0.02em;
 
 color: var(--secondary-title-color);
-margin: 0 auto;
+margin: 0 auto 48px ;
 
 
 
@@ -245,7 +251,6 @@ margin: 0 auto;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     color: #FFFFFF;
     background-color:#4D5AE5;
     border: none;
@@ -255,7 +260,7 @@ margin: 0 auto;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    display: block;
    margin: 0 auto;
-   margin-top: 48px;
+   
    
 
 }
@@ -281,11 +286,6 @@ margin: 0 auto;
 /*=============Benefits=============*/
 
 
-.benefits {
-padding-top: 120px;
-padding-bottom: 120px;
- 
-}
 
 .benefits-list{
     display: flex;
@@ -297,10 +297,14 @@ padding-bottom: 120px;
 .benefits-post-title {
     font-size:  20px;
     line-height: 1.2;
-    font-weight: 500;  
+    font-weight: 500;
+    margin-bottom: 8px;   
 }
 
-
+.benefits-item{
+  width: calc((100% - 72px) / 4 )
+    
+}
 
 
 
@@ -313,41 +317,37 @@ padding-bottom: 120px;
 
 
 /*=============What are we doing=============*/
-.products{
-    padding-bottom: 120px;  
+.products{  
 margin: 0 auto;
+padding-top:0;
 }
 
-.products-title{
- text-align: center;
 
-}
+
+
 .products-list{
     display: flex;
     gap: 24px;
     margin-top: 72px;
 }
    .products-item{
-    border: 1px solid #E7E9FC
-   }
+    border: 1px solid #E7E9FC ;
+    width: calc((100% - 48px) / 3 )
+}
 /*=============/What are we doing=============*/
 
 
 
 /*=============Our team=============*/
-
+.
 
 .team {
     background-color: #F4F4FD;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    
 }
 
 
-.team-title{
-text-align: center; 
-margin-bottom: 72px;   
-}
+
 .team-list{
     display: flex;
     gap: 24px;
@@ -355,20 +355,24 @@ margin-bottom: 72px;
     margin: 0 auto;
 }
   
-.second-title-team{
-    margin-top: 32px  ;
-    text-align: center; 
+.about{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
 }
 
-.team-text{
-    text-align: center; 
-    padding-bottom: 32px;   
+
+.second-title-team{
+    margin-bottom: 8px; 
 }
+
+
 
 .team-item{
     background: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 72px) / 4 )
 }
 
 /*=============/Our team=============*/
@@ -387,28 +391,29 @@ margin-bottom: 72px;
     color:var( --secondary-text-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin: 0;
+    
+}
+
+.logo-footer-text{
     width: 264px;
 }
 
+.footer-logo{
+    margin-bottom: 16px;
+    display: inline-block
+}
 
 
 /*=============/Footer=============*/
 
 
-.footer{
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-.footer-text{
-    margin-top: 16px;
-}
 
 
 
 /*=============Portfolio=============*/
 
 .menu-button{
-    padding-bottom: 120px;
     padding-top: 96px;
 }
 
@@ -463,18 +468,15 @@ border-left: 1px solid #E7E9FC;
 border-right: 1px solid #E7E9FC;
 border-bottom: 1px solid #E7E9FC;
 border-top: 0px;
+padding-top: 32px;
+padding-bottom: 32px;
+padding-left: 16px;
 
 }
 .servise-second-title{
-    padding-top: 32px;
     margin-bottom: 8px;
-    padding-left: 16px;
 }
 
-.servise-text{
-    padding-bottom: 32px;
-   padding-left: 16px;
-}
 
 
 
