@@ -36,7 +36,9 @@ body {
     --main-text-color:  #434455;
     --secondary-text-color:  #E7E9FC;
     --main-title-color: #2E2F42;
-    --secondary-title-color: #FFFFFF; }
+    --secondary-title-color: #FFFFFF;
+    --sacondary-background-color: #F4F4FD ;
+ }
 
 
 
@@ -251,7 +253,7 @@ margin: 0 auto 48px ;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
+    color: var(--secondary-title-color);
     background-color:#4D5AE5;
     border: none;
     padding:16px 32px ;
@@ -331,7 +333,7 @@ padding-top:0;
     margin-top: 72px;
 }
    .products-item{
-    border: 1px solid #E7E9FC ;
+    
     width: calc((100% - 48px) / 3 )
 }
 /*=============/What are we doing=============*/
@@ -340,8 +342,7 @@ padding-top:0;
 
 /*=============Our team=============*/
 .team{
-    background-color: #F4F4FD;
-    
+    background-color: var(--sacondary-background-color)
 }
 
 
@@ -367,7 +368,7 @@ padding-top:0;
 
 
 .team-item{
-    background: #FFFFFF;
+    background:var(--secondary-title-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     width: calc((100% - 72px) / 4 )
@@ -380,7 +381,7 @@ padding-top:0;
 /*=============Footer=============*/
 
 .footer {
-    background-color: #2E2F42;;
+    background-color: var(--main-title-color);
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -399,7 +400,8 @@ padding-top:0;
 
 .footer-logo{
     margin-bottom: 16px;
-    display: inline-block
+    display: inline-block;
+    margin-right: 0
 }
 
 
@@ -431,17 +433,17 @@ padding-top:0;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #4D5AE5;
-    background-color:#F4F4FD;
+    background-color:var(--sacondary-background-color);
     padding: 12px 24px; ;
     border-radius: 4px;
     cursor: pointer;
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--secondary-text-color);
     
 }
 
 .button-item :hover ,
 .menu-btn :focus {
-    color: #FFFFFF;
+    color: var(--secondary-title-color);
     background-color: #404BBF;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border: 1px solid #404BBF;
@@ -462,9 +464,9 @@ padding-top:0;
 }
 
 .text-block{
-border-left: 1px solid #E7E9FC;
-border-right: 1px solid #E7E9FC;
-border-bottom: 1px solid #E7E9FC;
+border-left: 1px solid var(--secondary-text-color);
+border-right: 1px solid var(--secondary-text-color);
+border-bottom: 1px solid var(--secondary-text-color);
 border-top: 0px;
 padding-top: 32px;
 padding-bottom: 32px;
